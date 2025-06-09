@@ -73,3 +73,34 @@ console.log(x.value);
 console.log(y.value);
 
 //so primities are copied by value, objects are copied by reference!
+
+//an object is not iterateable
+//we can use for...in but not for...of
+
+for(let key in circle){
+    console.log(key + "-" + circle[key]);
+}
+
+//modified for...of for interating through an object
+for(let key of Object.keys(circle)){
+    console.log(key," - " ,circle[key]);
+}
+
+for(let entry of Object.entries(circle)){
+    console.log(entry);
+}
+
+if('radius' in circle){     //check for an entry in object
+    console.log("yes");
+}
+
+//how to copy objects - old
+const another = {};
+for(let key in circle){
+    another[key] = circle[key];
+}
+console.log(another);
+
+//new equivalent method
+const another_ = Object.assign({}, circle);
+console.log(another_);
