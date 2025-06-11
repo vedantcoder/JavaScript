@@ -102,5 +102,49 @@ for(let key in circle){
 console.log(another);
 
 //new equivalent method
-const another_ = Object.assign({}, circle);
+const another_ = Object.assign({}, circle); //the first argument need not be empty, you can have some elements in it too
 console.log(another_);
+
+//spread operator
+const another__ = {...circle};  //... is the spread operator to clone an object
+console.log(another__);
+
+//Garbage Collection - no memory allocation hassle as garbage collector does it automatically!
+
+//Math object
+let num = Math.PI;    //assigns pi value to x
+//use mozilla documentation for any mathematical calculation, all math object functions are listed
+let num1 = Math.random(); //a random no b/w 0 to 1 is assigned to y
+console.log(num1);
+
+//String object
+const msg = 'Hi';   //string primitive
+const msg1 = new String("Hi"); //string object
+//but when we use dot operator with primitive string variable it is automatically wrapped into a string object and hence we can use all methods
+//associated with the string object
+//again mozilla documentation has a list of all methods of the String() object.
+
+//Template literals - indicated by ``
+const mymsg = 
+'This is my\n' +
+'\'first\' message';    //this is ugly code
+console.log(mymsg);
+
+const mymsg_ = 
+`This is my
+'first' message`;       //clean code!
+console.log(mymsg_);
+const username = "Vedant";
+const newmsg = `My name is ${username}.`;   //placeholder ${___ }
+console.log(newmsg);
+
+//Date object
+const now = new Date();
+console.log(now);
+const date1 = new Date('May 11 2018 09:00');
+console.log(date1);
+const date2 = new Date(2018, 4, 11, 9, 0); //0 based month indexing
+console.log(date2);
+//get and set mothods available in date object
+//refer to mozilla documentation for other functions
+//convert to string etc useful in apps
