@@ -1,4 +1,5 @@
 //Objects in js
+console.log("OBJECTS!");
 
 const circle = {        //object (object literal syntax)
     radius: 1,          
@@ -146,5 +147,4 @@ console.log(date1);
 const date2 = new Date(2018, 4, 11, 9, 0); //0 based month indexing
 console.log(date2);
 //get and set mothods available in date object
-//refer to mozilla documentation for other functions
-//convert to string etc useful in apps
+//refer to mozilla documentation for other functions, convert to string etc useful in apps

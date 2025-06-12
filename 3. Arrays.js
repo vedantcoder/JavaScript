@@ -1,4 +1,5 @@
 //Arrays in js
+console.log("ARRAYS!");
 
 //adding elements
 const numbers = [3, 4]; //constant does not stop us from modifying the contents of an array

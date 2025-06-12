@@ -1,6 +1,7 @@
-//JavaScript file for the project
-//We prefer having js in separate file for better code management
+//JavaScript
+console.log("JAVASCRIPT BASICS!");
 
+//We prefer having js in separate file for better code management
 console.log('This is code from .js file')
 
 //node index.js to run using node in terminal
@@ -116,5 +117,4 @@ let colors1 = ['red', 'blue', 'green'];
 for(let key1 of colors1){
     console.log(key1);
 }
-
 //NaN = Not a number, type = number!
